@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -o -E "\w+\b(?=(?:\s*\w+\b)*\w+\b$)"
+sort | tr -s ' ' '\n' | uniq -c | grep -v '^[^ ]* 2' | awk '{print $1}'
