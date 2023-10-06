@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type d | grep -c '/\..*$'
+ls -lad .*/ */ | grep -Eo '\S+' | wc -l
