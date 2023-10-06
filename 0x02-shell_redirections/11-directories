@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -lad .*/ */ | grep -Eo '\S+' | wc -l
+find . -type d | wc -l
