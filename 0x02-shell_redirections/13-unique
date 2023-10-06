@@ -1,2 +1,2 @@
 #!/bin/bash
-sort | tr -s ' ' '\n' | uniq -c | grep -v '^[^ ]* 2' | awk '{print $1}'
+sort | uniq -u
