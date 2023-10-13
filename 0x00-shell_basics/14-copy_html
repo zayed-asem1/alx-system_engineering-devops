@@ -1,2 +1,2 @@
 #!/bin/bash
-rsync -u --ignore-existing --progress *.html ..
+cp -u ./*.html ..
